@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-glass: rgba(255, 255, 255, 0.1);
+  --color-glassHover: rgba(255, 255, 255, 0.15);
+  --color-neonBlue: #00f3ff;
+  --color-neonPurple: #bc13fe;
+  --color-neonGreen: #0aff0a;
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-white min-h-screen overflow-x-hidden;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.glass-panel {
+  @apply bg-glass backdrop-blur-md border border-white/10 shadow-xl rounded-xl;
+}
+
+.neon-text {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
